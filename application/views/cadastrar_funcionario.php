@@ -66,7 +66,7 @@
                 <div class="col-md-6">        
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Informe seu email.."required>
+                        <input type="email" class="form-control email-inputmask" id="email-mask" name="email" required>
 
                     </div>
                 </div>

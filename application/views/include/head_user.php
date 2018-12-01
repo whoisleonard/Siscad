@@ -17,5 +17,8 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/libs/quill/dist/quill.snow.css">
     <link href="<?= base_url();?>assets/dist/css/style.min.css" rel="stylesheet">
+    
+    
+    <!-- <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/dist/css/wizard.css"> -->
    
 </head>

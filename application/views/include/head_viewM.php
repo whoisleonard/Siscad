@@ -11,12 +11,14 @@
         <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url(); ?>assets/teste/icon.svg">
         <title>Siscad-Cadastro da Mulher</title>
         <!-- Custom CSS -->
+        <link rel="stylesheet" href="<?= base_url(); ?>assets/matriz/html/css/matrix-style.css" />
+        <link rel="stylesheet" href="<?= base_url(); ?>assets/matriz/html/css/matrix-media.css" />
         <link href="<?= base_url(); ?>assets/libs/jquery-steps/jquery.steps.css" rel="stylesheet"> 
         <link href="<?= base_url(); ?>assets/libs/jquery-steps/steps.css" rel="stylesheet">
         <link href="<?= base_url(); ?>assets/dist/css/style.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/libs/select2/dist/css/select2.min.css">
-         <!-- ckeditor area de texto -->
-      <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/libs/quill/dist/quill.snow.css">
-    <link href="<?= base_url(); ?>assets/dist/css/style.min.css" rel="stylesheet">
-
+        <!-- ckeditor area de texto -->
+        <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/libs/quill/dist/quill.snow.css">
+        <link href="<?= base_url(); ?>assets/dist/css/style.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/css js/datatables.min.css"/>
     </head>

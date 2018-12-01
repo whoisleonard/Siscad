@@ -1,336 +1,688 @@
-   <div class="page-wrapper">
-            <!-- ============================================================== -->
-            <!-- Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-          
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
-            <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Start Page Content -->
-                <!-- ============================================================== -->
-                <div class="card">
-                    <div class="card-body wizard-content">
-                        <h4 class="card-title">Casa Rosa Mulher</h4>
-                        <h6 class="card-subtitle"></h6>
-                        <form id="example-form" action="Cadastro_mulher/cadastrar_mulher" method="Post" class="m-t-40">
-                            <div>
-                                <h3>Cadastro da Mulher</h3>
-                                <section>
-                                  
-    <div class="row">
-      <div class="form-group col-md-5">
-        <label for="nome">Nome:</label>
-                <input type="text" class="form-control" id="nome" name="nome" placeholder=" Digite o Nome..."required>
-      </div>
-      <div class="form-group col-md-4">
-        <label for="data_nascimento">Data de Nascimento:</label>
-                <input type="date" class="form-control" id="data_nascimento"name="data_nascimento" placeholder="Digite a Data de nascimento.."required>
-      </div>
-            <div class="form-group col-md-3">
-        <label for="religiao">Escolaridade</label>
-          <select class="form-control" name="religiao">
-   <option disabled="" selected=""></option>
-  <option value="1">Não Alfabetizada</option>
-  <option value="2">1º a 4º</option>
-   <option value="3">5º a 8º</option>
-     <option value="4">Fundamental Completo</option>
-       <option value="5">Médio Imcompleto</option>
-        <option value="6">Médio Completo</option>
-         <option value="7">Superior</option>
-      <option value="8">Não Informado</option>
+<div class="page-wrapper">
 
-</select> 
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="form-group col-md-3">
-        <label for="rg">RG:</label>
-                <input type="text" class="form-control" id="rg" name="rg" placeholder="Digite o RG.."required>
-      </div>
-      <div class="form-group col-md-3">
-        <label for="o_expe">Órgão Expedidor:</label>
-                <input type="text" class="form-control" id="o_expe" name="o_expe" placeholder="Digite o Órgão expedidor.."required>
-      </div>
-      <div class="form-group col-md-3">
-        <label for="cpf">CPF</label>
-                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite o CPF.."required>
-      </div>
-      <div class="form-group col-md-3">
-        <label for="telefone">Telefone:</label>
-                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Digite o Telefone"required>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="form-group col-md-6">
-        <label for="endereco">Endereço Residencial:</label>
-                <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite o Endereço"required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="pont_referencia">Ponto de Referencia</label>
-                <input type="text" class="form-control" id="pont_referencia" name="pont_referencia" placeholder="Digite o Ponto de referencia..">
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="form-group col-md-6">
-        <label for="bairro">Bairro:</label>
-                <input type="text" class="form-control" id="bairro" placeholder="Digite o Bairro"required>
-      </div>
-      <div class="form-group col-md-2">
-        <label for="zona">Zona:</label>
-                <select class="form-control" name="zona">
-   <option disabled="" selected=""></option>
-  <option value="urbana">Zona Urbana</option>
-  <option value="rural">Zona Rural</option>
 
-</select> 
-      </div>
-      <div class="form-group col-md-2">
-        <label for="cor">Cor:</label>
-          <select class="form-control" name="cor">
-   <option disabled="" selected=""></option>
-  <option value="branca">Branca</option>
-  <option value="preta">Preta</option>
-   <option value="parda">Parda</option>
-    <option value="indigena">Indígena</option>
-     <option value="amarela">Amarela</option>
-      <option value="ni">NI</option>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <div class="card">
+            <div class="card-body wizard-content">
+                <h4 class="card-title">Casa Rosa Mulher</h4>
+                <h6 class="card-subtitle"></h6>
+                <form id="example-form" action="<?= base_url(); ?>Cadastro_mulher/cadastrar_mulher" method="Post" class="m-t-40">
+                    <div> 
 
-</select> 
-      </div>
-      <div class="form-group col-md-2">
-        <label for="situ_conjugal">Situação Conjugal</label>
-          <select class="form-control" name="situ_conjugal">
-  <option disabled="" selected=""></option>
-  <option value="solteira">Solteira</option>
-  <option value="casada">Casada</option>
-   <option value="uniao_estavel">União Estável</option>
-    <option value="viuva">Viúva</option>
-     <option value="separada">Separada</option>
-     <option value="divociada">Divociada</option>
-      <option value="ni">NI</option>
-
-</select> 
-      </div>
-          
-    </div>
-    
-    <div class="row">
-      <div class="form-group col-md-2">
-                <label for="genero">Gênero</label>
-          <select class="form-control" name="genero">
-  <option disabled="" selected=""></option>
-  <option value="female">Feminino</option>
-  <option value="male">Masculino</option>
-   <option value="hfrodita">Hemafroditas</option>
-      <option value="ni">NI</option>
-
-</select> 
-      </div>
-      <div class="form-group col-md-2">
-        <label for="o_sexual">Orientação Sexual</label>
-          <select class="form-control" name="o_sexual">
- <option disabled="" selected=""></option>
-  <option value="ht">Heterossexual</option>
-  <option value="hm">Homossexual</option>
-   <option value="bi">Bissexuais</option>
-     <option value="asse">Assexuais</option>
-       <option value="pan">Panssexuais</option>
-      <option value="ni">NI</option>
-
-</select> 
-      </div>
-            
-              <div class="form-group col-md-5">
-        <label for="id_sexual">Identidade Sexual:</label>
-                <input type="text" class="form-control" id="id_sexual" name="id_sexual" placeholder="Identidade sexual..">
-      </div>
-            
-             <div class="form-group col-md-3">
-        <label for="religiao">Religião</label>
-          <select class="form-control" name="religiao">
-   <option disabled="" selected=""></option>
-  <option value="1">Católica</option>
-  <option value="2">Evangélica</option>
-   <option value="3">Espirita</option>
-     <option value="4">Daimista</option>
-       <option value="5">Matriz Africana</option>
-      <option value="ni">NI</option>
-
-</select> 
-      </div>
-    </div>
+                        <h3>Cadastro da Mulher</h3>
+                        <section>
+                            <input type="hidden" class="form-control" id="id" name="cod_login" value="">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="nome">Nome:*</label>                
+                                    <input type="text" class="form-control" id="nome"  name="nome"  placeholder=" Nome da Usuária..." required>
      
-    
                                     
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="data_nascimento">Data de Nascimento:*</label>
+                                    <input type="date" class="form-control" id="data_nascimento"name="data_nascimento" placeholder="Data de nascimento.." required>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label>Escolaridade:*</label>
+                                    <select   class="select2 form-control custom-select" style="width: 100%; height:36px;" name="escola" required>
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($escola as $escol) { ?>
+                                            <option value="<?= $escol->cod_escolaridade  ?>"><?= $escol->descricao_escol ?></option>
+                                        <?php } ?>
 
-
-    <hr />
-    
-   
-    
-</section>
-
-
-                                
-                                <h3>Busca Pelo Serviço</h3>
-                                <section>
-                                  <div class="row">
- <div class="form-group col-md-12">
-         <label>Encaminhada  Por Qual Instituição?</label>                           
-  <div class="input-group-prepend">
-    <div class="input-group-text">
-      <input type="checkbox" name="encaminhada" id="encamin" size="86" maxlength="255" aria-label="Checkbox for following text input" onchange="habilitar()">
-          <label></label>
-     <input type="text" name="institu" id="institu" class="form-control" size="87" maxlength="255"   aria-label="Text input with checkbox" disabled>
-    </div>
-  </div>
-      </div>
-    
-    </div>
-    
-    <div class="row">
-       <div class="form-group col-md-12">
-                <label>Espôntanea  Como Soube do Serviço?</label>                           
-  <div class="input-group-prepend">
-    <div class="input-group-text">
-      <input type="checkbox" name="espontanea" id="espon" size="70" maxlength="255" aria-label="Checkbox for following text input" onchange="ativar()">
-          <label></label>
-  <input type="text" name="como" id="como" class="form-control" size="70" maxlength="255" aria-label="Text input with checkbox" disabled>
-    </div>
-  </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="form-group col-md-3">
-        <label for="motivo">Motivo da procura:</label>
-                <select class="form-control" name="motivo">
-   <option disabled="" selected=""></option>
-  <option value="1">Atendimento Social</option>
-  <option value="2">Atendimento Psicológico</option>
-  <option value="3">Atendimento Jurídico</option>
-
-</select> 
-      
-    </div>
-    <div class="form-group col-md-9">
-        <label for="curso">Curso:</label>
-                <input type="text" class="form-control" id="tcurso" name="curso" placeholder="Digite o Nome do Curso..">
-      </div>
-        </div>
-    <div class="row">
-      
-      <div class="form-group col-md-6">
-        <label for="dispon">Disponibilidade de Horário:</label>
-        <input type="checkbox" name="dispo" value="m" /> Manhã
-                <input type="checkbox" name="dispo" value="t" /> Tarde
-      </div>
-    </div>
-    
-    <hr/>
-    
-    
-                                </section>
-                           
-                                <h3>Screening de Rotina</h3>
-                                <section>
-                                     <fieldset>
-    <label>-Você já se sentiu humilhada, intimidada, amedrontada, ameaçada, diminuida, acuada por uma pessoa importante para você(seu parceiro/a,pai/mãe,tio,irmão)?(Violência Psicológica)</label>
-    <input type="radio" name="vp" value="vp1" /> Não<br>
-    <input type="radio" name="vp" value="vp2" /> Sim 
-  </fieldset>
-            
-            <br>
-            
-            <fieldset>
-    <label>-Alguém próximo a você lhê bate ou ja bateu? Ou Alguém importante para você lhe agrediu fisicamente(seu parceiro/a,pai/mãe,tio,irmão)?(Violência Física)</label>
-     <input type="radio" name="vf" value="vf1" /> Não<br>
-    <input type="radio" name="vf" value="vf2" /> Sim 
-  </fieldset>
-            
-               <br>
-               
-            <fieldset>
-    <label>-Você já se sentiu forçada a ter relações sexuais com alguém? (Violência Sexual)</label>
-     <input type="radio" name="vs" value="vs1" /> Não<br>
-    <input type="radio" name="vs" value="vs2" /> Sim 
-  </fieldset>
-               <br>
-               
-            <fieldset>
-    <label>Você já teve algum objeto pessoal, da sua casa ou instrumento de trabalho danificado ou subtraido por alguma pessoa próxima a você? (Violência Econômica)</label>
-    <input type="radio" name="ve" value="ve1" /> Não<br>
-    <input type="radio" name="ve" value="ve2" /> Sim 
-  </fieldset>
-               <br>
-               
-            <fieldset>
-    <label>Você já se sentiu ofendida por uma pessoa próxima ter te difamado, injuriado e ou caluniado? (Violência Moral)</label>
-     <input type="radio" name="vm" value="vm1" /> Não<br>
-    <input type="radio" name="vm" value="vm2" /> Sim 
-  </fieldset>
-            <br><br>
-   
-
-                                </section>
-                               
+                                    </select> 
+                                </div>
                             </div>
-                        </form>
+
+                            <div class="row">
+                                <div class="form-group col-md-3">
+                                    <label for="rg">RG:*</label>
+                                    <input type="text" class="form-control rg-inputmask" id="rg-mask" name="rg" placeholder=" RG.." required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="o_expe">Órgão Expedidor:*</label>
+                                    <input type="text" class="form-control" id="o_expe" name="o_expe" placeholder=" Órgão expedidor.." required>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="cpf">CPF:*</label>
+                                    <input type="text" class="form-control cpf-inputmask" id="cpf-mask" name="cpf" placeholder=" CPF.." required>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="situ_conjugal">Situação Conjugal:*</label>
+                                    <select   class="select2 form-control custom-select" style="width: 100%; height:36px;" name="situ_conjugal" required>
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($situ_conjugal as $sconju) { ?>
+                                            <option value="<?= $sconju->cod_situacao_conjugal ?>"><?= $sconju->descricao_conjugal ?></option>
+                                        <?php } ?>
+
+                                    </select> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    <label for="endereco">Endereço Residencial:*</label>
+                                    <input type="text" class="form-control" id="endereco" name="endereco" placeholder=" Endereço.." required>
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="numero">Número:</label>
+                                    <input type="text" class="form-control" id="numero" name="numero" placeholder="Número da casa.."required >
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="s_moradia">Situação de Moradia:*</label>
+                                    <input type="text" class="form-control" id="s_moradia" name="s_moradia" placeholder="Situação de Moradia.." required>
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="bairro">Bairro:*</label>
+                                    <input type="text" class="form-control" id="bairro" name="bairro" placeholder=" Bairro" required>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="row">
+                                
+                                <div class="form-group col-md-3">
+                                    <label for="cidade">Cidade:*</label>
+                                    <input type="text" class="form-control" id="cidade" name="cidade" placeholder=" Cidade" required >
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="estado">Estado:*</label>
+                                    <input type="text" class="form-control" id="estado" name="estado" placeholder=" Estado" required >
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="cep">CEP:</label>
+                                    <input type="text" class="form-control cep-inputmask" id="cep-mask" name="cep" placeholder=" CEP..">
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="zona">Zona:*</label>
+                                    <select   class="select2 form-control custom-select" style="width: 100%; height:36px;" name="zona" required>
+                                        <option disabled="" selected=""></option>
+                                        <option value="urbana">Zona Urbana</option>
+                                        <option value="rural">Zona Rural</option>
+
+                                    </select> 
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="celular">Celular:*</label>
+                                    <input type="tel" class="form-control phone-inputmask" id="celular-mask" name="celular" placeholder="Celualr" required>
+                                </div>
+
+
+
+                            </div>
+                            <div class="row">
+
+                                <div class="form-group col-md-3">
+                                    <label for="telefone">Telefone:</label>
+                                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder=" Telefone Fixo">
+                                </div>  
+                                <div class="form-group col-md-3">
+                                    <label for="o_sexual">Orientação Sexual:*</label>
+                                    <select  class="select2 form-control custom-select" style="width: 100%; height:36px;" name="o_sexual" required>
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($orientacao_sexual as $o_sexual) { ?>
+                                            <option value="<?= $o_sexual->cod_orientacao_sexual ?>"><?= $o_sexual->descricao_sexual ?></option>
+                                        <?php } ?>
+
+                                    </select> 
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="cor">Cor:*</label>
+                                    <select   class="select2 form-control custom-select" style="width: 100%; height:36px;" name="cor" required>
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($cor as $cores) { ?>
+                                            <option value="<?= $cores->cod_cor ?>"><?= $cores->descricao_cor ?></option>
+                                        <?php } ?>
+
+                                    </select> 
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="genero">Renda Familiar:*</label>
+                                    <select   class="select2 form-control custom-select" style="width: 100%; height:36px;" name="renda" required>
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($renda_familiar as $renda) { ?>
+                                            <option value="<?= $renda->cod_renda_familiar ?>"><?= $renda->descricao_renda ?></option>
+                                        <?php } ?>
+
+                                    </select> 
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+                            <div class="form-group row">
+                                <div class="form-group col-md-3">
+                                    <label for="profi">Profissão:*</label>
+                                    <select  class="select2 form-control custom-select" style="width: 100%; height:36px;" name="profi" required >
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($profissao as $profi) { ?>
+                                            <option value="<?= $profi->cod_profissao ?>"><?= $profi->descricao_p ?></option>
+                                        <?php } ?>
+
+                                    </select> 
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="sexo">Sexo:*</label>
+                                    <select   class="select2 form-control custom-select" style="width: 100%; height:36px;" name="sexo" required>
+                                        <option disabled="" selected=""></option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="hemafrodita">Hemafrodita</option>
+
+                                    </select> 
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="religiao">Religião:*</label>
+                                    <select   class="select2 form-control custom-select" style="width: 100%; height:40px;" name="religiao" required>
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($religiao as $reli) { ?>
+                                            <option value="<?= $reli->cod_religiao ?>"><?= $reli->descricao_r ?></option>
+                                        <?php } ?>
+
+                                    </select> 
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="n_filhos">Nº de Filhos:</label>
+                                    <input type="text" class="form-control" id="n_filhos" name="n_filhos" placeholder="Quantidade de filhos..">
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="data_filho">Data de Nascimento:</label>
+                                    <input type="date" class="form-control" id="data_filho" name="data_filho" placeholder="Data de Nascimento dos filhos..">
+                                </div>
+
+                            </div>
+                            <div class="row">
+
+                                <div class="form-group col-md-4">
+                                    <label for="h_familia">Historico Familiar:*</label>
+                                    <input type="text" class="form-control" id="h_familia" name="h_familia" placeholder="Historico familiar.." required>
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="tdocs">Tipo de Arquivo:</label>
+                                    <select   class="select2 form-control custom-select" style="width: 100%; height:40px;" name="tdocs">
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($tdocumento as $tdocs) { ?>
+                                            <option value="<?= $tdocs->cod_tipo_documento ?>"><?= $tdocs->descricao_arq ?></option>
+                                        <?php } ?>
+
+                                    </select> 
+                                </div>
+
+                                <div class="form-group col-md-5">                     
+
+                                    <label>Anexar arquivo:</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name="arquivo" id="validatedCustomFile" placeholder="Escolha uma arquivo..">
+                                        <label class="custom-file-label" for="validatedCustomFile" ></label>
+                                        <div class="invalid-feedback">Este formato de arquivo e invalido!</div>
+                                    </div>                    
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!--  fim editor -->
+
+                            Campos Com (*) São Obrigatorios.
+                        </section>
+
+
+
+                        <h3>Busca Pelo Serviço</h3>
+                        <section>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $('#cursos').hide();
+                                    $('#hora').hide();
+
+                                    $('#motivo').change(function () {
+                                        if ($('#motivo').val() == 4) {
+                                            $('#cursos').show();
+                                            $('#hora').show();
+                                        } else {
+                                            $('#cursos').hide();
+                                            $('#hora').hide();
+                                        }
+                                    });
+                                });
+
+                            </script> 
+
+                            <!-- inicio da linha encaminhada e espotânea -->
+
+
+
+                            <?php foreach ($busca as $busca) { ?>
+                                <div class="row">
+                                    <div class="form-group col-md-2"> 
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" name="busca" id="<?= $busca->descricao_busca ?>" value="<?= $busca->cod_busca_servico ?>" >
+                                            <label class="custom-control-label" for="<?= $busca->descricao_busca ?>"><?= $busca->descricao_busca ?></label>
+                                        </div>
+                                    </div>
+                                </div>
+   
+                            <?php } ?>
+
+ 
+
+                            <!--fim do como... -->
+
+
+                            <div class="row">
+                                <div class="form-group col-md-4">
+
+                                    <label>Como soube?</label>
+                                    <select class="form-control" name="como" id="comosoub" >
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($soubecomo as $como) { ?>
+                                            <option value="<?= $como->cod_como_soube_do_servico ?>"><?= $como->descricao_como ?></option>
+                                        <?php } ?>
+
+                                    </select> 
+
+
+                                </div>
+
+                                <div class="form-group col-md-4"> 
+                                    <label>Por Qual Instituição? </label>
+                                    <select class="form-control" name="institu" id="institu" >
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($espontanea as $espo) { ?>
+                                            <option value="<?= $espo->cod_instituicoes ?>"><?= $espo->nome_institu ?></option>
+                                        <?php } ?>
+
+                                    </select>  
+
+                                </div>
+
+
+
+
+                            </div> <!-- fim da linha encaminhada e espotânea -->
+
+
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    <label for="motivo">Motivo da procura:*</label>
+                                    <select class="form-control" id="motivo" name="motivo" required="required">
+                                        <option disabled="" selected=""></option>
+                                        <?php foreach ($motivos as $motivo) { ?>
+                                            <option value="<?= $motivo->cod_motivo_procura ?>"><?= $motivo->descricao_motivo ?></option>
+                                        <?php } ?>
+
+                                    </select> 
+
+                                </div><!-- fim da linha motivo da procura -->
+
+                                <div class="form-group col-md-4" id="cursos">
+                                    <label for="curso">Qual Curso:</label>
+                                    <select class="form-control"  name="curso">
+                                        <option enable="" selected=""></option>
+                                        <?php foreach ($cursos as $curso) { ?>
+                                            <option value="<?= $curso->descricao ?>"><?= $curso->descricao ?></option>
+                                        <?php } ?>
+                                    </select>
+                                </div> <!-- fim da linha cursos -->
+
+                                <div class="form-group col-md-4" id="hora" >
+                                    <label >Disponibilidade de Horário:</label><br>
+                                    <div class="form-check form-check-inline">  
+                                        <input class="form-check-input" type="checkbox"  id="inlineCheckbox1" name="dispo" value="m" disabled>
+                                        <label class="form-check-label" id="hora" for="inlineCheckbox1">Manhã</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox"  id="inlineCheckbox2" name="dispo" value="t" disabled>
+                                        <label class="form-check-label"  for="inlineCheckbox2"> Tarde</label>
+                                    </div>
+                                </div>
+
+                            </div><!-- fim da DIV row -->
+
+                            <!-- editor -->
+                            <div class="row">
+                                <div class="col-12">
+
+                                    <h4 class="card-title">Observação:</h4>
+                                    <!-- Create the editor container -->
+                                    <div id="dvCentro">
+                                        <textarea class="ckeditor"  id="observacao" name="observacao"></textarea>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+
+                            Campos Com (*) São Obrigatorios.
+                        </section>
+
+                        <h3>Screening de Rotina</h3>
+                        <section>
+
+                            <fieldset>
+                                <label>-Você já se sentiu humilhada, intimidada, amedrontada, ameaçada, diminuida, acuada por uma pessoa importante para você(seu parceiro/a,pai/mãe,tio,irmão)?(Violência Psicológica)</label>           
+                                <br>
+                                <div class="row">
+                                    <div class="form-group col-md-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio"  id="Radios1" name="vp" value="não">
+                                            <label class="form-check-label" for="Radios1">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio"  id="Radios1"  name="vp" value="sim">
+                                            <label class="form-check-label" for="Radios1">Sim </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <div class="form-group row">
+
+                                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Por Quem?</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="fname" name="agressoP" placeholder="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4"> 
+                                        <div class="form-group row">
+                                            <label  for="fname" class="col-md-3 m-t-9">Violência:</label>
+                                            <div class="col-md-7">
+                                                <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="psicolo">
+                                                    <option enable="" selected=""></option>
+                                                    <?php foreach ($tipoviolencia as $violencia) { ?>
+                                                        <option value="<?= $violencia->descricao ?>"><?= $violencia->descricao ?></option>
+                                                    <?php } ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div><!-- fim da lin -->
+                                </div>
+
+                            </fieldset>
+                            <hr>
+                            <br>
+
+                            <fieldset>
+                                <label>-Alguém próximo a você lhê bate ou ja bateu? Ou Alguém importante para você lhe agrediu fisicamente(seu parceiro/a,pai/mãe,tio,irmão)?(Violência Física)</label>
+                                <br>
+                                <div class="row">
+                                    <div class="form-group col-md-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio"  id="Radios3" name="vf" value="não">
+                                            <label class="form-check-label" for="Radios3">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio"  id="Radios3"  name="vf" value="sim">
+                                            <label class="form-check-label" for="Radios3">Sim </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <div class="form-group row">
+
+                                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Por Quem?</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="fname" name="agressoF" placeholder="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4"> 
+                                        <div class="form-group row">
+                                            <label  for="fname" class="col-md-3 m-t-9">Violência:</label>
+                                            <div class="col-md-7">
+                                                <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="vfisica">
+                                                    <option enable="" selected=""></option>
+                                                    <?php foreach ($tipoviolencia as $violencia) { ?>
+                                                        <option value="<?= $violencia->descricao ?>"><?= $violencia->descricao ?></option>
+                                                    <?php } ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div><!-- fim da lin -->
+                                </div>
+                            </fieldset>
+                            <hr>
+                            <br>
+
+                            <fieldset>
+                                <label>-Você já se sentiu forçada a ter relações sexuais com alguém? (Violência Sexual)</label>
+                                <div class="row">
+                                    <div class="form-group col-md-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio"  id="Radios4" name="vs" value="não">
+                                            <label class="form-check-label" for="Radios4">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio"  id="Radios4"  name="vs" value="sim">
+                                            <label class="form-check-label" for="Radios4">Sim </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <div class="form-group row">
+
+                                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Por Quem?</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="fname" name="agressoS" placeholder="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4"> 
+                                        <div class="form-group row">
+                                            <label  for="fname" class="col-md-3 m-t-9">Violência:</label>
+                                            <div class="col-md-7">
+                                                <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="vsexual">
+                                                    <option enable="" selected=""></option>
+                                                    <?php foreach ($tipoviolencia as $violencia) { ?>
+                                                        <option value="<?= $violencia->descricao ?>"><?= $violencia->descricao ?></option>
+                                                    <?php } ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div><!-- fim da lin -->
+                                </div>
+
+                            </fieldset>
+                            <hr>
+                            <br>
+
+                            <fieldset>
+                                <label>Você já teve algum objeto pessoal, da sua casa ou instrumento de trabalho danificado ou subtraido por alguma pessoa próxima a você? (Violência Econômica)</label>
+                                <div class="row">
+                                    <div class="form-group col-md-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio"  id="Radios5" name="ve" value="não">
+                                            <label class="form-check-label" for="Radios5">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio"  id="Radios5"  name="ve" value="sim">
+                                            <label class="form-check-label" for="Radios5">Sim </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <div class="form-group row">
+
+                                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Por Quem?</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="fname" name="agressoE" placeholder="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4"> 
+                                        <div class="form-group row">
+                                            <label  for="fname" class="col-md-3 m-t-9">Violência:</label>
+                                            <div class="col-md-7">
+                                                <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="veconomi">
+                                                    <option enable="" selected=""></option>
+                                                    <?php foreach ($tipoviolencia as $violencia) { ?>
+                                                        <option value="<?= $violencia->descricao ?>"><?= $violencia->descricao ?></option>
+                                                    <?php } ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div><!-- fim da lin -->
+                                </div>
+                            </fieldset>
+                            <br>
+                            <hr>
+                            <fieldset>
+
+                                <label>Você já se sentiu ofendida por uma pessoa próxima ter te difamado, injuriado e ou caluniado? (Violência Moral)</label>
+
+                                <div class="row">
+                                    <div class="form-group col-md-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio"  id="Radios6" name="vm" value="não">
+                                            <label class="form-check-label" for="Radios6">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-md-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="Radios6"  name="vm" value="sim">
+                                            <label class="form-check-label" for="Radios6">Sim </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <div class="form-group row">
+
+                                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Por Quem?</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="fname" name="agressoM" placeholder="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4"> 
+                                        <div class="form-group row">
+                                            <label  for="fname" class="col-md-3 m-t-9">Violência:</label>
+                                            <div class="col-md-7">
+                                                <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="vmoral">
+                                                    <option enable="" selected=""></option>
+                                                    <?php foreach ($tipoviolencia as $violencia) { ?>
+                                                        <option value="<?= $violencia->descricao ?>"><?= $violencia->descricao ?></option>
+                                                    <?php } ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div><!-- fim da lin -->
+                                </div>
+                                <br>
+
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="NI" value="Não Informado">
+                                    <label class="form-check-label" for="exampleCheck1">Não Informado</label>
+                                </div>
+                            </fieldset>
+
+                            <br><br>
+
+
+                        </section>
+
+                        <h3>Considerações finais</h3>
+                        <section>
+
+                            <div class="row">
+
+                                <div class="form-group col-md-6">
+                                    <label for="situ_apre">Situação Apresentada:*</label>
+                                    <input type="text" class="form-control"   id="situ_apre" name="situ_apre" placeholder="Informe a Situação apresentada" required>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="m_utlizada">Metodologia Utilizada:*</label>
+                                    <input type="text" class="form-control"   id="m_utlizada" name="m_utlizada" placeholder="Informe a Metodologia utilizada no atendimento" required>
+                                </div>
+                            </div>
+                     <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="c_finais">Considerações Finais:</label>
+                                <textarea type="text" class="form-control" id="c_finais" name="c_finais" weight="256" placeholder="descreva aqui suas considerações finais sobre a usuária."required></textarea>
+                            </div>
+                            
+                             <div class="form-group col-md-6">
+                                    <label for="encaminha">Encaminhamento:*</label>
+                                    <textarea type="text" class="form-control" id="encaminha" name="encaminha" weight="256" placeholder="Informe os dados do encaminhamento"> </textarea>
+                                </div>
+                     </div>
+                            Campos Com (*) São Obrigatorios.
+                        </section>
+
                     </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
+                </form>
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
         </div>
         <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
+        <!-- End PAge Content -->
         <!-- ============================================================== -->
-<script>
- function habilitar(){
-        if(document.getElementById('encamin').checked){
-            document.getElementById('institu').removeAttribute("disabled");
-        }
-        else {
-            document.getElementById('institu').value=''; //Evita que o usuário defina um texto e desabilite o campo após realiza-lo
-            document.getElementById('institu').setAttribute("disabled", "disabled");
-            
-        } 
-    }
-    </script>
-    
-    <script>
-        function ativar(){
-        if(document.getElementById('espon').checked){
-            document.getElementById('como').removeAttribute("disabled");
-        }else {
-            document.getElementById('como').value=''; //Evita que o usuário defina um texto e desabilite o campo após realiza-lo
-            document.getElementById('como').setAttribute("disabled", "disabled");
-        }
-    }
-    </script>
+        <!-- ============================================================== -->
+        <!-- Right sidebar -->
+        <!-- ============================================================== -->
+        <!-- .right-sidebar -->
+        <!-- ============================================================== -->
+        <!-- End Right sidebar -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- End Page wrapper  -->
+
+
+
+

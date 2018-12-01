@@ -19,14 +19,13 @@
 <script src="<?= base_url(); ?>assets/libs/select2/dist/js/select2.full.min.js"></script>
 <script src="<?= base_url(); ?>assets/libs/select2/dist/js/select2.min.js"></script>
 <script src="<?= base_url(); ?>assets/ckeditor/ckeditor.js"></script>
-<!-- macara cpf and cep js--> 
- <script src="<?= base_url(); ?>assets/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
-    <script src="<?= base_url(); ?>assets/dist/js/pages/mask/mask.init.js"></script>
-
+<script src="<?= base_url();?>assets/matriz/html/js/matrix.interface.js"></script> 
+ <script src="<?= base_url();?>assets/matriz/html/js/jquery.dataTables.min.js"></script> 
+<script src="<?= base_url();?>assets/matriz/html/js/matrix.tables.js"></script>     
+                
 <script>
     CKEDITOR.replace( '#observacao' );
 </script>
-
 <script>
     // Basic Example with form
     var form = $("#example-form");

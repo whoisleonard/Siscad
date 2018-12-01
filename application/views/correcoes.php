@@ -29,30 +29,19 @@
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
                       <img src="<?= base_url(); ?>assets/images/siscad12.png" width="185" height="65" alt="homepage" class="light-logo" /> 
+
+                       </b>
+                     <!--   <span class="logo-text"> 
                            
-                        </b>
-                        <!--End Logo icon -->
-                         <!-- Logo text -->
-                        <span class="logo-text">
-                             <!-- dark Logo text -->
-                          <!--   <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
+                     <img src="<?= base_url(); ?>assets/images/siscad.png" width="209" height="73" alt="homepage" class="light-logo" /> 
+
                             
-                        </span>
-                        <!-- Logo icon -->
-                        <!-- <b class="logo-icon"> -->
-                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <!-- <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
-                            
-                        <!-- </b> -->
-                        <!--End Logo icon -->
-                    </a>
-                    <!-- ============================================================== -->
-                    <!-- End Logo -->
-                    <!-- ============================================================== -->
-                    <!-- ============================================================== -->
-                    <!-- Toggle which is visible on mobile only -->
-                    <!-- ============================================================== -->
+                       </span> --> 
+
+
+
+                     </a>
+
                     <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
                 </div>
                 <!-- ============================================================== -->
@@ -69,11 +58,11 @@
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             <span class="d-none d-md-block">Opções <i class="fa fa-angle-down"></i></span>
-                             <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>   
+                                <span class="d-none d-md-block">Opções <i class="fa fa-angle-down"></i></span>
+                                <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>   
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                 <a class="dropdown-item" href="<?= base_url(); ?>Cadastro_mulher/cadastro">Cadastrar Usuária</a>
+                                <a class="dropdown-item" href="<?= base_url(); ?>Cadastro_mulher/cadastro">Cadastrar Usuária</a>
                                 <a class="dropdown-item" href="<?= base_url(); ?>Usuarios/cadastro">Cadastrar Funcionário</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="<?= base_url();?>Usuarios">Listar Funcionários</a>
@@ -83,20 +72,20 @@
                         <!-- ============================================================== -->
                         <!-- Search -->
                         <!-- ============================================================== -->
-                       <li class="nav-item search-box"> <a class="nav-link waves-effect waves-dark"  data-toggle="modal" data-target="#exampleModal" href="javascript:void(0)"><i class="ti-search"> Pesquisar</i></a>
+                        <li class="nav-item search-box"> <a class="nav-link waves-effect waves-dark"  data-toggle="modal" data-target="#exampleModal" href="javascript:void(0)"><i class="ti-search"> Pesquisar</i></a>
                            <!-- <form class="app-search position-absolute">
                                 <input type="text" class="form-control" placeholder="Buscar"> <a class="srh-btn"><i class="ti-close"></i></a>
                             </form> -->
                         </li>
+                        
+                        
                     </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav float-right">
-                        <!-- ============================================================== -->
-                        <!-- Comment -->
-                        <!-- ============================================================== -->
-                         <li class="nav-item dropdown">
+                      
+                        <li class="nav-item dropdown">
                             <!--<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?= base_url(); ?>assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
                                 <div class="dropdown-divider"></div> -->
@@ -104,21 +93,6 @@
 
                            <!-- </div> -->
                         </li>
-                        <!-- ============================================================== -->
-                        <!-- End Comment -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- Messages -->
-                        <!-- ============================================================== -->
-                      
-                        <!-- ============================================================== -->
-                        <!-- End Messages -->
-                        <!-- ============================================================== -->
-
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
@@ -138,43 +112,54 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav" class="p-t-30">
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"  href="<?= base_url(); ?>Dashboard/Tela" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Tela Inicial</span></a></li>
-                       
-                       <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Atendimento</span></a>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url(); ?>Dashboard/Tela" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Tela Inicial</span></a></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Atendimento</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="<?= base_url(); ?>Cadastro_mulher/Cadastro" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Cadastro Da Usuária</span></a>
+                                <li class="sidebar-item"><a href="<?= base_url(); ?>Cadastro_mulher/Cadastro" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Cadastro Da Usuária</span></a></li>
                                 
-                                </li>
+
                             </ul>
                         </li>
                         
-                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Curso</span></a>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Curso</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                   <li class="sidebar-item"><a href="<?= base_url(); ?>Cadastro_mulher/filtrar_user" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Selecionar Usuária</span></a></li>
 
                             </ul>
                         </li>
-                          <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Funcionário</span></a>
+
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Funcionário</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="<?= base_url(); ?>Usuarios/cadastro" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Cadastro de Funcionários </span></a></li>
                             </ul>
                         </li>
-                        
-                       <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Relatórios</span></a>
+
+
+
+
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Relatórios</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="" data-toggle="modal" data-target="#exampleModalinforma"  class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Informativo </span></a></li>
                               <li class="sidebar-item"><a href="" data-toggle="modal" data-target="#exampleModalCenter" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Social </span></a></li> 
                                  <li class="sidebar-item"><a href="<?= base_url(); ?>Relatorio_quanty/relatorio_county" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Quantitativo </span></a></li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
             <!-- End Sidebar scroll-->
         </aside>
-       
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+    </div>     <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+
+
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
        <form action="<?= base_url(); ?>Usuarios/pesquisar" method="post">

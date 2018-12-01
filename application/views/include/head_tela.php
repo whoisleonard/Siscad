@@ -12,8 +12,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url();?>assets/teste/icon.svg">
     <title>Siscad-Tela Inicial</title>
     <!-- Custom CSS -->
-    <link href="<?= base_url();?>assets/libs/flot/css/float-chart.css" rel="stylesheet">
+    <link href="<?= base_url();?>assets/matrix/assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="<?= base_url();?>assets/dist/css/style.min.css" rel="stylesheet">
+    <link href="<?= base_url();?>assets/matrix/dist/css/style.min.css" rel="stylesheet">
     
+  
 </head>
