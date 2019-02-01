@@ -1,9 +1,22 @@
 <div class="page-wrapper">
 
     <div class="container-fluid">
-        <!-- ============================================================== -->
-        <!-- Start Page Content -->
-        <!-- ============================================================== -->
+        
+        <?php if ($this->session->flashdata('sucess') == TRUE): ?>
+             <div class="alert alert-success alert-dismissible" id="myAlert">
+                <a href="#" class="close">&times;</a>
+                <strong> <?php echo $this->session->flashdata('sucess'); ?></strong>
+            </div>
+        <?php endif; ?>
+            
+
+        <?php if ($this->session->flashdata('error') == TRUE): ?>
+             <div class="alert alert-success-danger">&times;</a>
+                <strong> <?php echo $this->session->flashdata('error'); ?></strong>
+            </div>
+        <?php endif; ?>
+        
+        
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
@@ -25,7 +38,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="cpf">CPF:</label>
-                                        <input type="txt" class="form-control" id="cpf" name="cpf" placeholder="CPF.."required>
+                                        <input type="txt" class="form-control cpf-inputmask" id="cpf" name="cpf" placeholder="CPF.."required>
                                     </div>
                                 </div>
                                 

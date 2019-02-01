@@ -20,12 +20,6 @@
     <!-- Container fluid  -->
     <!-- ============================================================== -->
     <div class="container-fluid">
-        <?php if ($this->session->flashdata('sucess') == TRUE): ?>
-            <div class="alert alert-success alert-dismissible" id="myAlert">
-                <a href="#" class="close">&times;</a>
-                <strong> <?php echo $this->session->flashdata('sucess'); ?></strong>, Você Logou com Sucesso!." 
-            </div>
-        <?php endif; ?> 
 
         <!-- =========================================================================================================== --> 
 
@@ -71,6 +65,15 @@
                         </div>
                     </div></a>
             </div>
+            
+             <div class="col-md-6 col-lg-2 col-xlg-3">
+                <a href="" data-toggle="modal" data-target="#exampleModal" ><div class="card card-hover">
+                        <div class="box bg-success text-center">
+                            <h1 class="font-light text-white"><i class="ti-search"></i></h1>
+                            <h6 class="text-white" > Pesquisar Usuária</h6>
+                        </div>
+                    </div></a>
+            </div>
             <!-- Column -->
 
         </div> <!-- fim atalhos widgets-->
@@ -79,6 +82,21 @@
         <br> <br> <br>
 
         <div class="row">
+            
+             <!-- =========================================================================================================== -->               
+                            <div class="col-md-2">
+                                <div class=" card-hover"
+                                     <div class="col-md-6 col-lg-4 col-xlg-4">
+                                        <div class="bg-cyan p-10 text-white text-center">
+                                            <i class=" far fa-file font-22 text-white"></i>
+
+                                            <h5 class="m-b-0 m-t-5 text-pink"><?php echo $curso ?>  </h5>
+                                            <h7 class="m-b-0 m-t-3 text-white"> <b>Curso.</b></h7> 
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            <!-- =========================================================================================================== --> 
 
             <div class="col-md-3">
                 <div class=" card-hover"
@@ -96,7 +114,7 @@
                 <div class="col-md-2">
                     <div class=" card-hover"
                          <div class="col-md-6 col-lg-4 col-xlg-4">
-                            <div class="bg-info p-10 text-white text-center">
+                            <div class="bg-success p-10 text-white text-center">
                                 <i class=" far fa-file font-22 text-white"></i>
 
                                 <h5 class="m-b-0 m-t-5 text-pink"><?php echo $juridico ?>  </h5>
@@ -108,7 +126,7 @@
                     <div class="col-md-3">
                         <div class=" card-hover"
                              <div class="col-md-6 col-lg-4 col-xlg-4">
-                                <div class="bg-primary p-10 text-white text-center">
+                                <div class="bg-info p-10 text-white text-center">
                                     <i class=" far fa-file font-22 text-white"></i>
 
                                     <h5 class="m-b-0 m-t-5 text-pink"><?php echo $psicologico ?>  </h5>
@@ -128,24 +146,42 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- =========================================================================================================== -->               
-                            <div class="col-md-2">
-                                <div class=" card-hover"
-                                     <div class="col-md-6 col-lg-4 col-xlg-4">
-                                        <div class="bg-cyan p-10 text-white text-center">
-                                            <i class=" far fa-file font-22 text-white"></i>
+                           
 
-                                            <h5 class="m-b-0 m-t-5 text-pink"><?php echo $curso ?>  </h5>
-                                            <h7 class="m-b-0 m-t-3 text-white"> <b>Curso.</b></h7> 
-                                        </div>
-                                    </div>
-                                </div>
                             </div><!-- fim da row-->
-                            <!-- =========================================================================================================== --> 
-
-
                         </div> <!-- fim do container-->
 
                     </div><!-- fim do wrapper -->
                     
                 </div> <!--main wrapp -->
+                
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+       <form action="<?= base_url(); ?>Cadastro_mulher/pesquisar_usuaria" method="post">
+    <div class="modal-content">
+        
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pesquisar Cadastro.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          
+         
+          <div class="form-group">
+            <label for="namecp" class="col-form-label">Pesquisar Usuária:</label>
+            <input type="text" class="form-control" id="namecp" name="namecp" placeholder="Informe Nome da Usuária..">
+          </div>
+        
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn btn-primary">Pesquisar</button>
+      </div>
+              
+    </div>
+   </form>
+  </div>
+</div>

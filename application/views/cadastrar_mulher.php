@@ -15,18 +15,18 @@
             <div class="card-body wizard-content">
                 <h4 class="card-title">Casa Rosa Mulher</h4>
                 <h6 class="card-subtitle"></h6>
-                <form id="example-form" action="<?= base_url(); ?>Cadastro_mulher/cadastrar_mulher" method="Post" class="m-t-40">
+                <form id="example-form" action="<?= base_url(); ?>Cadastro_mulher/cadastrar_mulher" method="Post" class="m-t-40" >
                     <div> 
 
                         <h3>Cadastro da Mulher</h3>
                         <section>
-                            <input type="hidden" class="form-control" id="id" name="cod_login" value="">
+                            <input type="hidden" class="form-control" id="id" name="cod_usuaria" value="">
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label for="nome">Nome:*</label>                
                                     <input type="text" class="form-control" id="nome"  name="nome"  placeholder=" Nome da Usuária..." required>
-     
-                                    
+
+
                                 </div>
                                 <div class="form-group col-md-3">
                                     <label for="data_nascimento">Data de Nascimento:*</label>
@@ -37,7 +37,7 @@
                                     <select   class="select2 form-control custom-select" style="width: 100%; height:36px;" name="escola" required>
                                         <option disabled="" selected=""></option>
                                         <?php foreach ($escola as $escol) { ?>
-                                            <option value="<?= $escol->cod_escolaridade  ?>"><?= $escol->descricao_escol ?></option>
+                                            <option value="<?= $escol->cod_escolaridade ?>"><?= $escol->descricao_escol ?></option>
                                         <?php } ?>
 
                                     </select> 
@@ -57,7 +57,7 @@
                                     <label for="cpf">CPF:*</label>
                                     <input type="text" class="form-control cpf-inputmask" id="cpf-mask" name="cpf" placeholder=" CPF.." required>
                                 </div>
-                                <div class="form-group col-md-3">
+                                <div class="form-group col-md-4">
                                     <label for="situ_conjugal">Situação Conjugal:*</label>
                                     <select   class="select2 form-control custom-select" style="width: 100%; height:36px;" name="situ_conjugal" required>
                                         <option disabled="" selected=""></option>
@@ -77,7 +77,7 @@
 
                                 <div class="form-group col-md-2">
                                     <label for="numero">Número:</label>
-                                    <input type="text" class="form-control" id="numero" name="numero" placeholder="Número da casa.."required >
+                                    <input type="number" class="form-control" id="numero" name="numero" placeholder="Número da casa.."required >
                                 </div>
 
                                 <div class="form-group col-md-3">
@@ -95,7 +95,7 @@
 
                             </div>
                             <div class="row">
-                                
+
                                 <div class="form-group col-md-3">
                                     <label for="cidade">Cidade:*</label>
                                     <input type="text" class="form-control" id="cidade" name="cidade" placeholder=" Cidade" required >
@@ -121,7 +121,7 @@
                                 </div>
                                 <div class="form-group col-md-3">
                                     <label for="celular">Celular:*</label>
-                                    <input type="tel" class="form-control phone-inputmask" id="celular-mask" name="celular" placeholder="Celualr" required>
+                                    <input type="tel" class="form-control phone-inputmask" id="celular-mask" name="celular" placeholder="Celular" required>
                                 </div>
 
 
@@ -155,7 +155,7 @@
                                     </select> 
                                 </div>
 
-                                <div class="form-group col-md-3">
+                                <div class="form-group col-md-4">
                                     <label for="genero">Renda Familiar:*</label>
                                     <select   class="select2 form-control custom-select" style="width: 100%; height:36px;" name="renda" required>
                                         <option disabled="" selected=""></option>
@@ -175,7 +175,7 @@
 
 
                             <div class="form-group row">
-                                <div class="form-group col-md-3">
+                                <div class="form-group col-md-2">
                                     <label for="profi">Profissão:*</label>
                                     <select  class="select2 form-control custom-select" style="width: 100%; height:36px;" name="profi" required >
                                         <option disabled="" selected=""></option>
@@ -197,7 +197,7 @@
                                     </select> 
                                 </div>
 
-                                <div class="form-group col-md-3">
+                                <div class="form-group col-md-2">
                                     <label for="religiao">Religião:*</label>
                                     <select   class="select2 form-control custom-select" style="width: 100%; height:40px;" name="religiao" required>
                                         <option disabled="" selected=""></option>
@@ -208,25 +208,7 @@
                                     </select> 
                                 </div>
 
-                                <div class="form-group col-md-2">
-                                    <label for="n_filhos">Nº de Filhos:</label>
-                                    <input type="text" class="form-control" id="n_filhos" name="n_filhos" placeholder="Quantidade de filhos..">
-                                </div>
-
-                                <div class="form-group col-md-2">
-                                    <label for="data_filho">Data de Nascimento:</label>
-                                    <input type="date" class="form-control" id="data_filho" name="data_filho" placeholder="Data de Nascimento dos filhos..">
-                                </div>
-
-                            </div>
-                            <div class="row">
-
-                                <div class="form-group col-md-4">
-                                    <label for="h_familia">Historico Familiar:*</label>
-                                    <input type="text" class="form-control" id="h_familia" name="h_familia" placeholder="Historico familiar.." required>
-                                </div>
-
-                                <div class="form-group col-md-3">
+                                 <div class="form-group col-md-3">
                                     <label for="tdocs">Tipo de Arquivo:</label>
                                     <select   class="select2 form-control custom-select" style="width: 100%; height:40px;" name="tdocs">
                                         <option disabled="" selected=""></option>
@@ -236,27 +218,34 @@
 
                                     </select> 
                                 </div>
-
-                                <div class="form-group col-md-5">                     
+                                
+                                   <div class="form-group col-md-3">                     
 
                                     <label>Anexar arquivo:</label>
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" name="arquivo" id="validatedCustomFile" placeholder="Escolha uma arquivo..">
-                                        <label class="custom-file-label" for="validatedCustomFile" ></label>
-                                        <div class="invalid-feedback">Este formato de arquivo e invalido!</div>
+                                        <input type="file" class="form-control" name="arquivo" >
                                     </div>                    
                                 </div>
 
-
                             </div>
+                             <div class="row">
+                                <div class="col-12">
 
+                                    <h4 class="card-title">Historico Familiar:*</h4>
+                                    <!-- Create the editor container -->
+                                    <div id="dvCentro">
+                                        <textarea class="ckeditor"  id="observacao" name="h_familia" placeholder="Historico familiar.." required></textarea>
+
+                                    </div>
+                                </div>
+                            </div>
+                 
 
 
                             <!--  fim editor -->
 
                             Campos Com (*) São Obrigatorios.
                         </section>
-
 
 
                         <h3>Busca Pelo Serviço</h3>
@@ -283,28 +272,37 @@
 
 
 
-                            <?php foreach ($busca as $busca) { ?>
-                                <div class="row">
-                                    <div class="form-group col-md-2"> 
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" class="custom-control-input" name="busca" id="<?= $busca->descricao_busca ?>" value="<?= $busca->cod_busca_servico ?>" >
-                                            <label class="custom-control-label" for="<?= $busca->descricao_busca ?>"><?= $busca->descricao_busca ?></label>
-                                        </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-4"> 
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" name="busca" id="expo" value="2" onclick="habilitarComo();"  >
+                                        <label class="custom-control-label" for="expo">Expontânea</label>
+                                    </div>
+                                </div> 
+
+                                <div class="form-group col-md-4"> 
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" name="busca" id="encamin" value="1" onclick="habilitarstu();" >
+                                        <label class="custom-control-label" for="encamin">Encaminhada</label>
                                     </div>
                                 </div>
-   
-                            <?php } ?>
 
- 
+
+                            </div>
+
+
+
+
 
                             <!--fim do como... -->
 
 
                             <div class="row">
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-4" >
 
                                     <label>Como soube?</label>
-                                    <select class="form-control" name="como" id="comosoub" >
+                                    <select class="form-control" name="como"  id="comosoub" disabled >
                                         <option disabled="" selected=""></option>
                                         <?php foreach ($soubecomo as $como) { ?>
                                             <option value="<?= $como->cod_como_soube_do_servico ?>"><?= $como->descricao_como ?></option>
@@ -315,9 +313,9 @@
 
                                 </div>
 
-                                <div class="form-group col-md-4"> 
+                                <div class="form-group col-md-4" > 
                                     <label>Por Qual Instituição? </label>
-                                    <select class="form-control" name="institu" id="institu" >
+                                    <select class="form-control" name="institu" id="institu" disabled>
                                         <option disabled="" selected=""></option>
                                         <?php foreach ($espontanea as $espo) { ?>
                                             <option value="<?= $espo->cod_instituicoes ?>"><?= $espo->nome_institu ?></option>
@@ -359,11 +357,11 @@
                                 <div class="form-group col-md-4" id="hora" >
                                     <label >Disponibilidade de Horário:</label><br>
                                     <div class="form-check form-check-inline">  
-                                        <input class="form-check-input" type="checkbox"  id="inlineCheckbox1" name="dispo" value="m" disabled>
+                                        <input class="form-check-input" type="checkbox"  id="inlineCheckbox1" name="dispo" value="Manhã" >
                                         <label class="form-check-label" id="hora" for="inlineCheckbox1">Manhã</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox"  id="inlineCheckbox2" name="dispo" value="t" disabled>
+                                        <input class="form-check-input" type="checkbox"  id="inlineCheckbox2" name="dispo" value="Tarde" >
                                         <label class="form-check-label"  for="inlineCheckbox2"> Tarde</label>
                                     </div>
                                 </div>
@@ -640,17 +638,26 @@
                                     <input type="text" class="form-control"   id="m_utlizada" name="m_utlizada" placeholder="Informe a Metodologia utilizada no atendimento" required>
                                 </div>
                             </div>
-                     <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="c_finais">Considerações Finais:</label>
-                                <textarea type="text" class="form-control" id="c_finais" name="c_finais" weight="256" placeholder="descreva aqui suas considerações finais sobre a usuária."required></textarea>
-                            </div>
-                            
-                             <div class="form-group col-md-6">
-                                    <label for="encaminha">Encaminhamento:*</label>
+                            <div class="row">
+                                
+
+                                <div class="form-group col-md-6">
+                                    <label for="encaminha">Encaminhamento:</label>
                                     <textarea type="text" class="form-control" id="encaminha" name="encaminha" weight="256" placeholder="Informe os dados do encaminhamento"> </textarea>
                                 </div>
-                     </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-12">
+
+                                    <h4 class="card-title">Considerações Finais:*</h4>
+                                    <!-- Create the editor container -->
+                                    <div id="dvCentro">
+                                        <textarea class="ckeditor"  id="observacao" name="c_finais"  placeholder="descreva aqui suas considerações finais sobre a usuária." required></textarea>
+
+                                    </div>
+                                </div>
+                            </div>
+                 
                             Campos Com (*) São Obrigatorios.
                         </section>
 
@@ -686,3 +693,39 @@
 
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModalFilho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form id="n_filhos" action="<?= base_url(); ?>Cadastro_mulher/Cadastro" method="post">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Quantos Filhos?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            
+
+            <br> <br>
+            
+            <div class="col-lg-7">
+                  
+                <div class="input-group">     
+                    <input type="text" class="form-control" id="n_filhos" name="n_filhos" placeholder="Quantidade de filhos.." > 
+                   
+                </div>
+            </div>
+              <br> <br>
+              
+           
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn btn-success">OK</button>
+      </div>
+        </form>  
+    </div>
+  </div>
+</div>

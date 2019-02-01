@@ -63,9 +63,9 @@
 
                                         <a class="btn btn-info btn-xs" class="btn btn-group"  href="<?= base_url('Cadastro_mulher/vizualizar_cadastro/' . $woman['cod_usuaria']); ?>">Detalhar</a>
 
-                                        <a class="btn btn-warning btn-xs" class="btn btn-group" href="<?= base_url('Cadastro_mulher/editar_usuaria/' . $woman['cod_usuaria']); ?>">Editar</a>
+                                        <a class="btn btn-warning btn-xs" class="btn btn-group" href="<?= base_url('Cadastro_mulher/editar_cadastro_mulher/'. $woman['cod_usuaria']); ?>">Editar</a>
 
-                                        <a class="btn btn-danger btn-xs" class="btn btn-group" data-confirm href="<?= base_url('Cadastro_mulher/excluir_usuaria/' . $woman['cod_usuaria']); ?>">Excluir </a>
+                                        <a class="btn btn-danger btn-xs" class="btn btn-group"  data-confirm href="<?= base_url('Cadastro_mulher/arquivar_usuaria/' . $woman['cod_usuaria']); ?>">Arquivar</a>
 
                                     </td>
                                 </tr>
@@ -82,6 +82,32 @@
     </div>
 </div> <!-- fim da div wrapp-->
 
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#examplearquiva">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="examplearquiva" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

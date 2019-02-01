@@ -23,6 +23,53 @@
  <script src="<?= base_url(); ?>assets/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
     <script src="<?= base_url(); ?>assets/dist/js/pages/mask/mask.init.js"></script>
 
+    
+    <script type="text/javascript">
+        function habilitarComo () {
+            var op = document.getElementById("expo").value;
+
+            if(op == "2")
+            {
+              document.getElementById('comosoub').disabled = false; 
+              document.getElementById('institu').disabled = true;
+            }
+
+           
+        }
+    </script> 
+    
+    <script type="text/javascript">
+        function habilitarstu () {
+            var op = document.getElementById("encamin").value;
+
+            if(op == "1")
+            {
+              document.getElementById('institu').disabled = false; 
+              document.getElementById('comosoub').disabled = true;
+            }
+
+          
+        }
+    </script> 
+ <!-- <script type="text/javascript">
+$(document).ready(function() {
+    $("#expo").click(function (){
+                // habilita o campo 
+        $("comosoub").prop("disabled", false);
+        $("institu").prop("disabled", true);
+
+    });
+
+    $("#encamin").click(function (){
+                // desabilita o campo 
+        $("institu").prop("disabled", false);
+        $("comosoub").prop("disabled", true);
+    });
+});
+</script> -->
+
+    
+    
 <script>
     CKEDITOR.replace( '#observacao' );
 </script>

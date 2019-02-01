@@ -17,10 +17,9 @@
 <script src="<?= base_url(); ?>assets/extra-libs/multicheck/datatable-checkbox-init.js"></script>
 <script src="<?= base_url(); ?>assets/extra-libs/multicheck/jquery.multicheck.js"></script>
 <script src="<?= base_url(); ?>assets/extra-libs/DataTables/datatables.min.js"></script>
-<script src="<?= base_url(); ?>assets/personalizado.js"></script>
+<script src="<?= base_url(); ?>assets/arquiva_funcio/arquiva.js"></script>
   <!--Include these script files in the <head> or <body> tag-->
-  <script src="lib/jquery.1.11.min.js"></script>
-  <script src="dist/js/Lobibox.min.js"></script>
+
 <script>
     /****************************************
      *       Basic Table                   *

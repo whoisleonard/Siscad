@@ -25,7 +25,8 @@
     <script src="<?= base_url();?>assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="<?= base_url();?>assets/libs/quill/dist/quill.min.js"></script>
     <script src="<?= base_url(); ?>assets/personalizado.js"></script>
-
+ <script src="<?= base_url(); ?>assets/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+    <script src="<?= base_url(); ?>assets/dist/js/pages/mask/mask.init.js"></script>
 
      
  <script>

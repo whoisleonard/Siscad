@@ -17,11 +17,11 @@
 <script src="<?= base_url(); ?>assets/extra-libs/multicheck/datatable-checkbox-init.js"></script>
 <script src="<?= base_url(); ?>assets/extra-libs/multicheck/jquery.multicheck.js"></script>
 <script src="<?= base_url(); ?>assets/extra-libs/DataTables/dataTablesMulher/datatables.min.js"></script>
-<script src="<?= base_url(); ?>assets/excluirModal.js"></script>
+<script src="<?= base_url(); ?>assets/matrix/assets/personalizado.js"></script>
+
 
   <!--Include these script files in the <head> or <body> tag-->
- <script src="<?= base_url();?>assets/lobibox/lib/jquery.1.11.min.js"></script>
-  <script src="<?= base_url();?>assets/lobibox/dist/js/Lobibox.min.js"></script>
+
 
 <script>
     /****************************************
@@ -37,8 +37,8 @@ $(document).ready(function(){
     });
 });
 </script>
-<footer class="footer text-center">
-    2018 @ Team Siscad Jocicleide Kersse Leonardo
+  <footer class="footer text-center">
+    &copy; Team SisCad 2018
 </footer>
 
 </body>

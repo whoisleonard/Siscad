@@ -65,7 +65,7 @@
 
                                         <a class="btn btn-warning btn-xs" class="btn btn-group" href="<?= base_url('Usuarios/editar/' . $login['cod_login']); ?>">Editar</a>
 
-                                        <a class="btn btn-danger btn-xs" class="btn btn-group" data-confirm href="<?= base_url('Usuarios/excluir/' . $login['cod_login']); ?>">Excluir </a>
+                                        <a class="btn btn-danger btn-xs" class="btn btn-group" data-confirm href="<?= base_url('Usuarios/arquiva_funcionario/' . $login['cod_login']); ?>">Arquiva </a>
 
                                     </td>
                                 </tr>

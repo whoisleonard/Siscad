@@ -25,6 +25,7 @@
                                 <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Dados Pessoais</span></a> </li>
                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Busca Pelo Serviço</span></a> </li>
                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#messages" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Screening</span></a> </li>
+                                  <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#consi" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Considerações Finais</span></a> </li>
                             </ul>
                             <!-- Tab panes -->
                             <div class="tab-content tabcontent-border">
@@ -54,19 +55,19 @@
 
                         <div class="row">
                             <div class="form-group col-md-3">
-                                <label for="rg">RG:*</label>
+                                <label for="rg">RG:</label>
                                 <input type="text" class="form-control rg-inputmask" id="rg-mask" name="rg" value="<?= $user['rg']; ?>" disabled="">
                             </div>
                             <div class="form-group col-md-2">
-                                <label for="o_expe">Órgão Expedidor:*</label>
+                                <label for="o_expe">Órgão Expedidor:</label>
                                 <input type="text" class="form-control" id="o_expe" name="o_expe" value=" <?= $user['orgao_expedidor'] ?>" disabled="">
                             </div>
                             <div class="form-group col-md-3">
-                                <label for="cpf">CPF:*</label>
+                                <label for="cpf">CPF:</label>
                                 <input type="text" class="form-control cpf-inputmask" id="cpf-mask" name="cpf" value="<?= $user['cpf'] ?>" disabled="">
                             </div>
                             <div class="form-group col-md-3">
-                                <label for="situ_conjugal">Situação Conjugal:*</label>
+                                <label for="situ_conjugal">Situação Conjugal:</label>
                                 <input type="text" class="form-control" name="situ_conjugal" value="  <?= $user['descricao_conjugal'] ?>" disabled="">
 
                             </div>
@@ -97,7 +98,7 @@
                         <div class="row">
 
                             <div class="form-group col-md-3">
-                                <label for="cidade">Cidade:*</label>
+                                <label for="cidade">Cidade:</label>
                                 <input type="text" class="form-control" id="cidade" name="cidade" value="<?= $user['nome_cidade'] ?>" disabled="" >
                             </div>
 
@@ -116,7 +117,7 @@
 
                             </div>
                             <div class="form-group col-md-3">
-                                <label for="celular">Celular:*</label>
+                                <label for="celular">Celular:</label>
                                 <input type="tel" class="form-control phone-inputmask" id="celular-mask" name="celular" value="<?= $user['celular']; ?>" disabled="" >
                             </div>
 
@@ -184,7 +185,7 @@
                             </div>
                             
                         </div>
-                       
+                                
 
                                     </div>
                                 </div>
@@ -227,7 +228,7 @@
 
                         <div class="row">
                             <div class="form-group col-md-4">
-                                <label for="motivo">Motivo da procura:*</label>
+                                <label for="motivo">Motivo da procura:</label>
                                 <input  type="text" class="form-control" id="motivo" name="motivo" value=" <?= $user['descricao_motivo'] ?>" disabled="">
 
 
@@ -242,15 +243,11 @@
 
                             <div class="form-group col-md-4" id="hora" >
                                 <label >Disponibilidade de Horário:</label><br>
-                                <div class="form-check form-check-inline">  
-                                    <input class="form-check-input" type="checkbox"  id="inlineCheckbox1" name="dispo" value="m" disabled>
-                                    <label class="form-check-label" id="hora" for="inlineCheckbox1">Manhã</label>
+                             
+                                    <input class="form-control" type="text"  id="inlineCheckbox1" name="dispo" value="<?= $user['disponibilidade'] ?>" disabled>        
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox"  id="inlineCheckbox2" name="dispo" value="t" disabled>
-                                    <label class="form-check-label"  for="inlineCheckbox2"> Tarde</label>
-                                </div>
-                            </div>
+                  
+                           
 
                         </div><!-- fim da DIV row -->
 
@@ -462,6 +459,39 @@
                             </div>
                                     </fieldset>
                                     </div>
+                                </div>
+                                <div class="tab-pane p-20" id="consi" role="tabpanel">
+                                      <div class="p-20"> 
+                                    
+                      
+
+                            <div class="row">
+
+                                <div class="form-group col-md-6">
+                                    <label for="situ_apre">Situação Apresentada:*</label>
+                                    <input type="text" class="form-control"   id="situ_apre" name="situ_apre" value="<?= $user['situacao_apresentada'] ?>" disabled="">
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="m_utlizada">Metodologia Utilizada:*</label>
+                                    <input type="text" class="form-control"   id="m_utlizada" name="m_utlizada" value="<?= $user['metodologia_utilizada'] ?>" disabled="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="c_finais">Considerações Finais:</label>
+                                    <textarea type="text" class="form-control" id="c_finais" name="c_finais" weight="256" disabled=""><?= $user['consideracoes_finais'] ?></textarea>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="encaminha">Encaminhamento:*</label>
+                                    <textarea type="text" class="form-control" id="encaminha" name="encaminha" weight="256" disabled=""><?= $user['encaminhamentos'] ?> </textarea>
+                                </div>
+                            </div>
+                        
+                      
+                                      </div>
+                                    
                                 </div>
                                 
                                      <?php endforeach; ?>  

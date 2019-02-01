@@ -2,19 +2,27 @@
 <div class="page-wrapper">
     <div class="page-breadcrumb">
 
-        <div class="row">
-            <div class="col-md-2">  
-                <a class="btn btn-outline-success" href="<?= base_url() ?>Exemplopdf/relatorio_informativo" target="_blank">Imprimir ou Baixar</a>
-            </div>
- <!-- <?php var_dump($mulher)  ?> -->
-        </div> <!-- fim da linha  -->
+        
     </div>
+    <div class="container-fluid">
+         <?php if ($this->session->flashdata('error') == TRUE): ?>
+             <div class="alert alert-success-danger">&times;</a>
+                <strong> <?php echo $this->session->flashdata('error'); ?></strong>
+            </div>
+        <?php endif; ?>
+        <div class="row">
+            <div class="col-md-2"> 
+                  <?php foreach ($mulher as $user) : ?>
+                <a class="btn btn-success" href="<?= base_url('Relatorios/Pdf_informativo/' .$user['cod_usuaria']) ?>" target="_blank">Gerar PDF</a>
+            </div>
+ 
+        </div> <!-- fim da linha  -->
     <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
                     <center> <h3>Relátorio Informativo</h3> </center>
-   <?php foreach ($mulher as $user) : ?>
+ 
     <hr>
                                 <h4>Identificação da Usuária</h4>
                                   <hr>
@@ -42,19 +50,19 @@
 
                         <div class="row">
                             <div class="form-group col-md-3">
-                                <label for="rg">RG:*</label>
+                                <label for="rg">RG:</label>
                                 <input type="text" class="form-control rg-inputmask" id="rg-mask" name="rg" value="<?= $user['rg']; ?>" disabled="">
                             </div>
                             <div class="form-group col-md-2">
-                                <label for="o_expe">Órgão Expedidor:*</label>
+                                <label for="o_expe">Órgão Expedidor:</label>
                                 <input type="text" class="form-control" id="o_expe" name="o_expe" value=" <?= $user['orgao_expedidor'] ?>" disabled="">
                             </div>
                             <div class="form-group col-md-3">
-                                <label for="cpf">CPF:*</label>
+                                <label for="cpf">CPF:</label>
                                 <input type="text" class="form-control cpf-inputmask" id="cpf-mask" name="cpf" value="<?= $user['cpf'] ?>" disabled="">
                             </div>
                             <div class="form-group col-md-3">
-                                <label for="situ_conjugal">Situação Conjugal:*</label>
+                                <label for="situ_conjugal">Situação Conjugal:</label>
                                 <input type="text" class="form-control" name="situ_conjugal" value="  <?= $user['descricao_conjugal'] ?>" disabled="">
 
                             </div>

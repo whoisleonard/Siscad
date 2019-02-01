@@ -1,20 +1,29 @@
  
 <div class="page-wrapper">
     <div class="page-breadcrumb">
-
-        <div class="row">
-            <div class="col-md-2">  
-                <a class="btn btn-outline-success" href="<?= base_url() ?>Exemplopdf/relatorio_social" target="_blank">Imprimir ou Baixar</a>
+ 
+    <div class="container-fluid">
+         <?php if ($this->session->flashdata('error') == TRUE): ?>
+             <div class="alert alert-success-danger">&times;</a>
+                <strong> <?php echo $this->session->flashdata('error'); ?></strong>
             </div>
- <!-- <?php var_dump($mulher)  ?> -->
-        </div> <!-- fim da linha  -->
+        <?php endif; ?>
     </div>
+        
+        <div class="row">
+           
+            <div class="col-md-2">
+                  <?php foreach ($mulher as $user) : ?>
+                <a class="btn btn-success" href="<?= base_url('Relatorios/Pdf_social/' .$user['cod_usuaria']) ?>" target="_blank">Gerar PDF</a>
+            </div>
+
+        </div> 
     <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
                     <center> <h3>Relátorio Social</h3> </center>
-   <?php foreach ($mulher as $user) : ?>
+ 
     <hr>
                                 <h4>Identificação da Usuária</h4>
                                   <hr>

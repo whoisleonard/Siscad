@@ -1,7 +1,9 @@
 $(function(e) {
     "use strict";
     $(".date-inputmask").inputmask("dd/mm/yyyy"), 
-    $(".phone-inputmask").inputmask("(999) 999-9999"), 
+    $(".phone-inputmask").inputmask("(99) 999-999999"), 
+     $(".cpf-inputmask").inputmask("999.999.999-99"), 
+     $(".cep-inputmask").inputmask("99-999.999"), 
     $(".international-inputmask").inputmask("+9(999)999-9999"), 
     $(".xphone-inputmask").inputmask("(999) 999-9999 / x999999"), 
     $(".purchase-inputmask").inputmask("aaaa 9999-****"), 
@@ -9,6 +11,7 @@ $(function(e) {
     $(".ssn-inputmask").inputmask("999-99-9999"), 
     $(".isbn-inputmask").inputmask("999-99-999-9999-9"), 
     $(".currency-inputmask").inputmask("$9999"), 
+     $(".rg-inputmask").inputmask("9999999-9"), 
     $(".percentage-inputmask").inputmask("99%"), 
     $(".decimal-inputmask").inputmask({
         alias: "decimal"

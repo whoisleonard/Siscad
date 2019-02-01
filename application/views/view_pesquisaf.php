@@ -13,48 +13,44 @@
             </div>
                         <?php endif; ?> 
 
-                        <?php foreach ($usuario as $user) : ?>
-                            <h5 class="card-title m-b-0">Funcionario: <?= $user->nome ?></h5>
+                       <?php foreach ($mulheres as $woman) : ?>
+                            <h5 class="card-title m-b-0">Usuária: <?= $woman['nome'] ?></h5>
                         </div>
                         <table class="table">
                             <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Nome</th>
-                                    <th>CPF</th>
-                                    <th>Endereço</th>
-                                    <th>Email</th>
-                                    <th>Status</th>
-                                    <th>Nivel</th>
-                                    <th>Função</th>
-                                    <th>Ações</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                                  <tr>
+                                <th>ID</th>
+                                <th>Data e Hora do Cadastro</th>
+                                <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Telefone</th>
+                                <th>Data Nascimento</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-
+                          
                                 <tr>
-                                    <td><?= $user->cod_login ?></td>
-                                    <td><?= $user->nome ?></td>
-                                    <td><?= $user->cpf ?></td>
-                                    <td><?= $user->data_nascimento ?></td>
-                                    <td><?= $user->email ?></td>
-                                    <td><?= $user->status; ?></td>                 
-                                    <td><?= $user->funcao ?></td>
+                                    <td><?= $woman['cod_usuaria'] ?></td>
+                                     <td><?= date("d/m/Y - H:i", strtotime($woman['data_cadastro'])) ?></td>
+                                    <td><?= $woman['nome'] ?></td>
+                                    <td><?= $woman['cpf'] ?></td>
+                                    <td><?= $woman['celular']; ?></td>
+                                    <td><?= date("d/m/Y", strtotime($woman['data_nascimento'])) ?></td>
+
 
                                     <td>
 
-                                        <a class="btn btn-info btn-xs" class="btn btn-group"  href="<?= base_url('Dashboard/tela'); ?>">Voltar</a>
+                                        <a class="btn btn-info btn-xs" class="btn btn-group"  href="<?= base_url('Cadastro_mulher/vizualizar_cadastro/' . $woman['cod_usuaria']); ?>">Detalhar</a>
 
-                                        <a class="btn btn-warning btn-xs" class="btn btn-group" href="<?= base_url('Usuarios/editar/' . $user->cod_login); ?>">Editar</a>
+                                        <a class="btn btn-warning btn-xs" class="btn btn-group" href="<?= base_url('Cadastro_mulher/editar_usuaria/' . $woman['cod_usuaria']); ?>">Editar</a>
 
-                                        <a class="btn btn-danger btn-xs" class="btn btn-group" data-confirm href="<?= base_url('Usuarios/excluir/' . $user->cod_login); ?>">Excluir </a>
+                                        <a class="btn btn-danger btn-xs" class="btn btn-group" data-confirm href="<?= base_url('Cadastro_mulher/excluir_usuaria/' . $woman['cod_usuaria']); ?>">Excluir </a>
 
                                     </td>
-
-                                <?php endforeach; ?>
-
-                            </tr>
+                                </tr>
+                            <?php endforeach; ?>
 
                         </tbody>
 

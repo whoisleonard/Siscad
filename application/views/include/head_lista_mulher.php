@@ -9,7 +9,7 @@
     <meta name="author" content="Leonardo Silva">
     <!-- Favicon icon -->
    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url();?>assets/teste/icon.svg">
-    <title>CRM-Cadastro de Usuárias</title>
+    <title>Siscad-Cadastrar Usuárias</title>
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/extra-libs/multicheck/multicheck.css">
     <link href="<?= base_url();?>assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
